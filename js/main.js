@@ -33,18 +33,17 @@ $(function(){
         var scrollEvent = ($(window).scrollTop() > (excellence_number.position().top - $(window).height()));
         if(scrollEvent && blockStatus) {
             blockStatus = false; 
-            $('#num-1').animate({ number: 2310 }, 'slow');
+            $('#num-1').animate({ number: 2310 }, {
+                duration: 2000
+            });
     
-            $('#num-2')
-                .animate({ number: 30 }, {
-                    duration: 2000,
-                    postfix: '%'
-                })
-            ;
+            $('#num-2').animate({ number: 30 }, {
+                duration: 2000,
+                postfix: '%'
+            });
             
             
-            $('#num-3')
-            .animate({ number: 25 }, {
+            $('#num-3').animate({ number: 25 }, {
                 duration: 3000,
                 postfix: '%'
             });
